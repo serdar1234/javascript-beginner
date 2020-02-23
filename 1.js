@@ -56,7 +56,7 @@
 // do {i = prompt("Введи число больше 100","");}
 // while(i<=100 && i);
 
-let n=prompt("number bigger than 1",2);
+/* let n=prompt("number bigger than 1",2);
 for (i=1;i<n;i++) {
 	let foo=1;
 	while (foo<i) {
@@ -64,7 +64,7 @@ for (i=1;i<n;i++) {
 	alert(i);
 	foo++;
 	}
-}
+} */
 
 
 
