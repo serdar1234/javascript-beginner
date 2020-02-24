@@ -1,0 +1,55 @@
+﻿Git commands:
+
+git status - статус репы
+
+diff - какие изменения произошли
+
+add . - добавить в индекс все( . ) файлы
+
+commit -m "коммент" - закоммитить с комментом 
+
+show - что изменилось в последнем коммите (или в определенном коммите, если добавлен хеш этого коммита)
+
+checkout file.txt - удалить изменения файла file.txt
+
+log -2 - показать лог (журнал) последних двух коммитов с комментами и хешами
+
+reset HEAD file.txt - убрать из индекса файл file.txt, то есть обратное действие комманде git add file.txt HEAD означает наше текущее положение (в каком коммите мы сейчас)
+
+// add добавляет файл в индекс (список файлов для сохранения), а коммит уже сохраняет состояние файлов. Из коммита можно восстановить состояние файла на момент коммита
+
+commit --amend -m "text" - изменение коммента в последнем коммите. Такое изменение перезаписывает коммит, а не создает новый.
+
+git rm file.txt - удалить файл из последнего коммита
+
+git reset HEAD^ - удаляет последний пустой коммит, в котором мы сначала добавили, а потом удалили добавленный файл
+далее git commit --amend --no-edit
+
+git rm --cached test.txt - удаляет файл из коммита и убирает его из индекса. То есть файл больше не участвует в коммите, но физически не удаляется из папки
+далее git commit --amend --no-edit
+
+git help checkout - показывает справку по команде чекаут
+
+git log --oneline --graph --all -> all commits are condensed in 1 line per commit with some GUI (graph)
+
+git cat-file
+ -p hash12345 - shows commits content, -p = humanreadable
+
+git checkout hash123 - transfers us to that commit
+
+git checkout -b foobar hash123 - new branch named foobar
+
+git checkout master - we transfer to master branch
+
+git merge foobar -m "foobar merged with the master branch"
+
+в случае ошибки слияния веток надо открыть файл с конфликтом и найти в нем описание конфликта <<<<<<<<<< >>>>>>>>>
+
+дальше заиндексировать и закоммитить как всегда. 
+
+
+
+
+
+
+
