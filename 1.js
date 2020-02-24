@@ -66,6 +66,45 @@ for (i=1;i<n;i++) {
 	}
 } */
 
+// const number = +prompt('Введите число между 0 и 3', '');
+// switch (number) {
+	// case 0:
+	// alert('Вы ввели число 0');
+	// break;
+	
+	// case 1:
+	// alert('Вы ввели число 1');
+	// break;
+	
+	// case 2:
+	// case 3:
+	// alert('Вы ввели число 2, а может и 3');
+	// break;
+// }
+
+// function min(a,b) {
+	// if (a<b) {return a;}
+	// else {return b;}
+// }
+// alert(min(2,5));
+// alert(min(3,-1));
+// alert(min(1,1));
+
+function pow(x,n) {
+	if (n==undefined || n==null || n<0) 
+	{return `Степень ${n} не поддерживается, используйте натуральное число`;}
+	else {
+	return x**n;}
+}
+	let x = prompt("x?",);
+	let n = prompt("n?",);
+alert(pow(x,n));
+
+
+
+
+
+
 
 
 
